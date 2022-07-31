@@ -3,10 +3,10 @@ import ldclient
 from ldclient.config import Config
 
 # Set sdk_key to your LaunchDarkly SDK key before running
-sdk_key = ""
+sdk_key = "sdk-90f53fa4-627f-4c7b-b485-06cdd4fc3993"
 
 # Set feature_flag_key to the feature flag key you want to evaluate
-feature_flag_key = "my-boolean-flag"
+feature_flag_key = "segment"
 
 def show_message(s):
   print("*** %s" % s)
@@ -29,8 +29,8 @@ if __name__ == "__main__":
   # Set up the user properties. This user should appear on your LaunchDarkly users dashboard
   # soon after you run the demo.
   user = {
-    "key": "example-user-key",
-    "name": "Sandy"
+    "key": "example-user-key1",
+    "name": "Dandy"
   }
 
   flag_value = ldclient.get().variation(feature_flag_key, user, False)
