@@ -29,5 +29,5 @@ should return true based on segment flag, any other name and key combination sho
 
 4. Run app.py , if the pricing-tier-3 flag is true then http://localhost:5000 should show tier3.html ,  else it should show tier1.html
 ```
-   python test.py '{"key": "example-user-key", "name": "Sandy"}' - 
+   python app.py 
 ``` 
